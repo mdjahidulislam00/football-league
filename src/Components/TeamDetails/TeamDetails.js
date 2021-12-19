@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container, Row, Col, Image, } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFlag, faFutbol, faMapMarkedAlt, faMapMarker, faUsers } from '@fortawesome/free-solid-svg-icons'

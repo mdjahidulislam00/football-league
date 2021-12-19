@@ -14,7 +14,7 @@ const Home = () => {
             <Container>
                 <Row className='justify-content-center'>
                     {
-                        team.map(teamsData => <Col className='col-lg-4 col-md-6 col-sm-12 text-center p-2'> <TeamCart teamsData={teamsData} /> </Col>)
+                        team.map(teamsData => <Col className='col-lg-4 col-md-6 col-sm-12 text-center p-2'> <TeamCart teamsData={teamsData} id={teamsData.idTeam}/> </Col>)
                     }
                 </Row>
             </Container>
