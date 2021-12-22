@@ -11,8 +11,8 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route exact path="/home" element={<Home />} />
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/home" element={<Home />} />
         <Route path="ClubDetails/:countryName" element={<TeamDetails />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>

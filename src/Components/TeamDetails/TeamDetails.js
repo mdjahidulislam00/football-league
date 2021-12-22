@@ -30,7 +30,7 @@ const TeamDetails = () => {
         <Container fluid className="bg-secondary">
             <Container className='pt-3'>
                 <Row className='bg-info rounded pt-3'>
-                    <Col className='col-lg-7 col-sm-12 p-4 text-white'>
+                    <Col lg={6} md={6} xs={12} className='p-4 text-white'>
                         <h4><b> {strAlternate} </b></h4>
                         <h5> ({strTeam}) </h5>
                         <br />
@@ -41,26 +41,25 @@ const TeamDetails = () => {
                         <h6> <FontAwesomeIcon icon={faMapMarker} /> Stadium Location: {strStadiumLocation} </h6>
                         <h6> <FontAwesomeIcon icon={faUsers} /> Stadium Capacity: {intStadiumCapacity} </h6>
                     </Col>
-                    <Col className='col-lg-5 col-sm-12'>
+                    <Col lg={6} md={6} xs={12} className='col-lg-6 col-md-6 col-xm-12'>
                         <Image src={strTeamJersey} alt='logo' className='img-fluid p-4' style={{ width: '100%', height: '325px' }} />
                     </Col>
                 </Row>
                 <Row className='bg-info rounded mt-1'>
-                    <Col className='col-lg-4  col-sm-12'> <Image className='img-fluid img-thumbnail my-3 ml-0' src={strTeamFanart3}></Image> </Col>
-                    <Col className='col-lg-4  col-sm-12'> <Image className='img-fluid img-thumbnail my-3 ml-0' src={strStadiumThumb}></Image> </Col>
-                    <Col className='col-lg-4  col-sm-12'> <Image className='img-fluid img-thumbnail my-3 ml-0' src={strTeamFanart4}></Image> </Col>
-
+                    <Col lg={4} md={4} xs={12} > <Image className='img-fluid img-thumbnail my-3 ml-0' src={strTeamFanart3}></Image> </Col>
+                    <Col lg={4} md={4} xs={12}> <Image className='img-fluid img-thumbnail my-3 ml-0' src={strStadiumThumb}></Image> </Col>
+                    <Col lg={4} md={4} xs={12}> <Image className='img-fluid img-thumbnail my-3 ml-0' src={strTeamFanart4}></Image> </Col>
                 </Row>
                 <Row className='mt-3 p-0'>
-                    <Col className='text-center'>
+                    <Col className='text-center '>
                         <h3 className='text-light p-2'>About Team</h3>
-                        <p> {strDescriptionEN} </p>
+                        <p className='text-info'> {strDescriptionEN} </p>
                     </Col>
                 </Row>
                 <Row className='mt-5 p-0'>
                     <Col className='col-lg-12 text-center'>
                         <h3 className='text-light p-2'>About Stadium</h3>
-                        <p> {strStadiumDescription} </p>
+                        <p  className='text-info'> {strStadiumDescription} </p>
                     </Col>
                 </Row>
             </Container>

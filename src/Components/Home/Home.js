@@ -12,9 +12,9 @@ const Home = () => {
     return (
         <Container fluid className="bg-secondary">
             <Container>
-                <Row className='justify-content-center'>
+                <Row className=''>
                     {
-                        team.map(teamsData => <Col className='col-lg-4 col-md-6 col-sm-12 text-center p-2'> <TeamCart teamsData={teamsData} id={teamsData.idTeam}/> </Col>)
+                        team.map(teamsData => <Col lg={4} md={6} xs={12} className='text-center p-2'> <TeamCart teamsData={teamsData} id={teamsData.idTeam}/> </Col>)
                     }
                 </Row>
             </Container>
